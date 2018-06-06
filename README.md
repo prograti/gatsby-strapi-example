@@ -1,4 +1,4 @@
-#　Gatsby and Strapi example
+# Gatsby and Strapi example
 
 GatsbyとStrapiを使った静的サイトのサンプルです。
 
