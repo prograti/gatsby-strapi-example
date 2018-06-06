@@ -1,0 +1,66 @@
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
+@import '~bulma/sass/elements/table';
+@import '../../styles/_colors';
+
+main.post {
+  padding: 40px 10vw;
+  @include mobile {
+    padding: 20px 5vw 40px;
+  }
+  article {
+    overflow-wrap: break-word;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      color: $post-title-color;
+      font-weight: bold;
+      border-bottom: solid 1px $post-border-color;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin: 2rem 0 1rem;
+      color: $post-subhead-color;
+      font-weight: bold;
+    }
+    .postedAt {
+      font-size: 0.9rem;
+      color: #888;
+    }
+    p {
+      font-size: 0.9rem;
+      color: $post-color;
+      margin:0 0 1.5rem 0;
+    }
+    table {
+      background-color: $table-background-color;
+      font-size: 0.9rem;
+      color: $post-color;
+      td, th {
+        border: $table-cell-border;
+        border-width: $table-cell-border-width;
+        padding: $table-cell-padding;
+        vertical-align: top;
+      }
+    }
+    :global(.footnotes) { 
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.socialShare {
+  display: flex;
+  margin-top: 40px;
+  :global .SocialMediaShareButton {
+    cursor: pointer;
+    margin: 0 10px 0 0;
+  }
+}

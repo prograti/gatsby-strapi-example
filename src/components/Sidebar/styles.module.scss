@@ -1,0 +1,41 @@
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
+
+aside {
+  padding: 0 30px;
+  @include mobile {
+    padding-bottom: 40px;
+  }
+  .avatar {
+    text-align: center;
+    padding-top: 40px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+  nav {
+    ul.social {
+      margin-top: 30px;
+      text-align: center;
+      li {
+        display: inline;
+        margin: 0 10px;
+        a {
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
